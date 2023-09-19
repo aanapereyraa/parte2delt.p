@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo practico n°6- parte 2</title>
+</head>
+<body>
+    <h1>validate by direct input</h1>
+    <form action="#" method="post">
+    <fieldset>
+         <legend> validate by direct input</legend>
+        <label for="vali">enter the markup to validate:</label> <br>
+        <textarea name="vali" id="vali" cols="30" rows="10"></textarea> <br>
+
+        <input type="radio" name="document" value="vali" id="full" checked> 
+        <label for="full">validate full document</label> <br>
+
+        <label for="uso">use doctype</label>
+        <select name="doctype" id="uso"> 
+            <option>Seleccione</option>
+            <option value="opcion1">op1</option>
+            <option value="opcion2">op2</option>
+            <option value="opcion3">op3</option>
+            <option value="opcion4">op4</option>
+        </select> <br>
+
+        <input type="radio" name="validador" value="valiHTML" id="html">
+        <label for="html">validate HTML fragment</label> <br>
+        
+        <label for="uso">use doctype:</label>
+        <input type="radio" name="utilizar" value="uso" id="doctype" checked>
+        <label for="doctype">HTML 4.01</label>
+
+        <input type="radio" name="utilizar2" value="usos" id="doctype2">
+        <label for="doctype2">XHTML </label> <br>
+    </fieldset>
+   
+
+    <fieldset>
+        <legend>options</legend>
+        <input type="radio" name="msj" value="guardar" id="mensaje" checked>
+        <label for="mensaje">list messages sequentially</label>
+
+        <input type="radio" name="msjs" value="agrupador" id="error">
+        <label for="error">group error messages by type</label> <br>
+
+        <input type="checkbox" name="fuente"  value="SELECCION" id="mostrar">
+        <label for="mostrar">show source</label> 
+
+        <input type="checkbox" name="limpiar"  value="SELECCION" id="marcado" checked>
+        <label for="marcado">clean up markup with HTML-tidy</label> <br>
+    </fieldset>
+    <input type="submit" name="check" value="check">
+</form>
+    
+    
+</body>
+</html>
